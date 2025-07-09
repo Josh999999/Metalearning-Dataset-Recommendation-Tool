@@ -72,7 +72,14 @@ Install at:
 <br>
 
 
-### 2. Create MySQL Connection
+### 2. Make sure the MySQL server is running
+To run the MySQL Server run the command line as admin and perform the following operations:
+  - Navigate to MySQL bin directory (where MySQL is installed): `cd "C:\Program Files\MySQL\MySQL Server 8.0\bin"`
+  - Start MySQL Server: `mysqld`
+<br>
+
+
+### 3. Create MySQL Connection
 Run up MySQL or MySQL WorkBench and make a connection with the following details:
   - Host: localhost
   - User: root
