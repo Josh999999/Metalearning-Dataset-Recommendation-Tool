@@ -1,0 +1,14 @@
+[
+    {
+        "Algorithm": "algorithm_name",
+        "Accuracy": "algorithm_accuracy"
+    },
+    {
+        "Algorithm": "algorithm_name",
+        "Accuracy": "algorithm_accuracy"
+    },
+    {
+        "Algorithm": ["algorithm_name", "algorithm_name"],
+        "Accuracy": "algorithm_accuracy"
+    }
+]

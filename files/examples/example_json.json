@@ -1,0 +1,16 @@
+[
+    {
+      "Algorithm": "Linear Regression",
+      "Accuracy": 0.81,
+      "Precision": 0.79,
+      "Recall": 0.84,
+      "...": "..."
+    },
+    {
+      "Algorithm": "Decision Tree",
+      "Accuracy": 0.88,
+      "Precision": 0.85,
+      "Recall": 0.87,
+      "...": "..."
+    }
+  ]
