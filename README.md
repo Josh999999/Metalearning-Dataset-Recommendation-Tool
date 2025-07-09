@@ -21,23 +21,23 @@ Users can set a ‘task type’, used to filter uploaded algorithm performance a
 
 ## Setting up and running the application
 
-## 1. Create a Python Virtual Environment (venv)
+### 1. Create a Python Virtual Environment (venv)
 - In the Command Prompt, run:
   - Navigate to an appropriate directory for a venv folder to be created.
   - Run: `python -m venv venv_name` (replacing venv_name).
 
-## 2. Activate venv
+### 2. Activate venv
 - In the Command Prompt:
   - Make sure you are still in the same directory as in Step 1.
   - Run: `venv_name\Scripts\activate`
 
-## 3. Install dependencies into venv
+### 3. Install dependencies into venv
 - In the Command Prompt:
   - Navigate to the top-level of the repository (.../metalearning)
   - Run: `pip install -r requirements.txt` to install required dependencies.
 
 
-## 4. Deploy/run a local version of the application
+### 4. Deploy/run a local version of the application
 - Make sure your venv is currently/still activated before progressing.
 
 - In the Command Prompt:
