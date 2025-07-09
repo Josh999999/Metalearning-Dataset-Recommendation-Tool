@@ -39,11 +39,13 @@ In the Command Prompt, run:
   - Run: `python -m venv venv_name` (replacing venv_name).
 <br>
 
+
 ### 2. Activate venv
 In the Command Prompt:
   - Make sure you are still in the same directory as in Step 1.
   - Run: `venv_name\Scripts\activate`
 <br>
+
 
 ### 3. Install dependencies into venv
 In the Command Prompt:
@@ -51,12 +53,14 @@ In the Command Prompt:
   - Run: `pip install -r requirements.txt` to install required dependencies.
 <br>
 
+
 ### 4. Deploy/run a local version of the application
 Make sure your venv is currently/still activated before progressing.
 In the Command Prompt:
   - Navigate to the top-level of the repository (.../metalearning).
   - Run: `streamlit run main.py` to launch the application.
 <br>
+
 
 
 ## Setting up and running the application for Database reccomendation
@@ -86,10 +90,30 @@ Run up MySQL or MySQL WorkBench and make a connection with the following details
   - Password: Joshua100x
   - Port: 3306
 
-Creating the connection should look something like this (with the password put it)
+Creating the connection should look something like this (with the password put it):
 ![image](https://github.com/user-attachments/assets/1f8178f0-ade2-4cee-8753-ab79aa3a869c)
 
 <br>
+
+
+### 4. Change connection details (only if neccessary)
+If the connection details provided in the previous step are inconveniant then they can be changed:
+  - Navigate to the top of the Metalearning project files (.../metalearning)
+  - Locate the `database_connection.py` file
+  - Change the details inside all the `mysql.connector.connect()` objects in the file to the prefered
+
+The connection objects inside the python file should look like this:
+![image](https://github.com/user-attachments/assets/3a6dddad-7df8-4f1c-ae48-b7beb8efd63d)
+
+<br>
+
+
+### 5. Create Database
+Create the Database used by the Metalearning search Engine:
+  - Create a new query inside of MySQL Workbench
+  - Paste and run the following SQL statements in the MySQL Workbench query file
+<br>
+
 ```
 CREATE DATABASE IF NOT EXISTS pca;
 
@@ -105,21 +129,10 @@ CREATE TABLE datasets (
 );
 ```
 
-### 2. Activate venv
-In the Command Prompt:
-  - Make sure you are still in the same directory as in Step 1.
-  - Run: `venv_name\Scripts\activate`
 <br>
+Creating the Database inside MySQL Workbench should look something like this:
 
-### 3. Install dependencies into venv
-In the Command Prompt:
-  - Navigate to the top-level of the repository (.../metalearning)
-  - Run: `pip install -r requirements.txt` to install required dependencies.
-<br>
+![image](https://github.com/user-attachments/assets/47b2d63f-79c5-4575-bce5-467411bbf2d4)
 
-### 4. Deploy/run a local version of the application
-Make sure your venv is currently/still activated before progressing.
-In the Command Prompt:
-  - Navigate to the top-level of the repository (.../metalearning).
-  - Run: `streamlit run main.py` to launch the application.
+
 <br>
